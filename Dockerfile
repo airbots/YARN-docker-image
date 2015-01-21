@@ -23,3 +23,6 @@ ENV HADOOP_MAPRED_HOME /opt/hadoop
 ENV HADOOP_YARN_HOME /opt/hadoop
 ENV HADOOP_CONF_DIR /opt/hadoop/etc/hadoop
 ENV YARN_CONF_DIR $HADOOP_PREFIX/etc/hadoop
+
+#add config file
+ADD yarn-site.xml $HADOOP_PREFIX/etc/hadoop/yarn-site.xml
